@@ -1,6 +1,7 @@
 /* Set the background color of the whole page to black */
 body {
-    background-image: url('back1.jpg'); /* Replace with the path to your blurred image */
+    background-image: url('back1.jpg'); 
+    /* background-image: url('myback2.png');  */
     background-size: cover; /* Cover the entire viewport with the background image */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -264,7 +265,7 @@ footer {
 }
 
 .exp p{
-    color: white;
+    
     font-family: monospace;
 }
 
@@ -276,6 +277,83 @@ footer {
 .exp li {
     font-size: 16px;
     margin-bottom: 10px;
+    color: white;
+    font-family: monospace;
+}
+
+.skills{
+    display: inline-block;
+    padding: 0.5% 1.5%;
+    margin-left: 1%;
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.skmain{
+    margin-top: 7%;
+}
+.sk.content {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+.sk{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0.5% 2%;
+    border-radius: 15px;
+}
+
+.skh h1{
+    margin-left: 10%;
+    font-size: 40px;
+    color: white;
+    font-family: monospace;
+}
+
+.sk h2{
+    font-size: 24px;
+    color: white;
+    font-family: monospace;
+}
+
+.sk h3{
+    margin-top: 40px;
+    font-size: 22px;
+    color: white;
+    font-family: monospace;
+}
+
+
+.sk ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.sk li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: monospace;
+}
+.sk a {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+.sk p{
+    margin-top: 30px;
+    font-size: 16px;
     color: white;
     font-family: monospace;
 }
