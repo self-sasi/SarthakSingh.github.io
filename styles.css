@@ -1,0 +1,282 @@
+/* Set the background color of the whole page to black */
+body {
+    background-image: url('back1.jpg'); /* Replace with the path to your blurred image */
+    background-size: cover; /* Cover the entire viewport with the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Fixed background scrolling */
+    
+    margin: 0; /* Remove default margin to cover the whole page */
+    padding: 0; /* Remove default padding */
+}
+
+/* Style the navbar */
+/* Style the navbar with a translucent background */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding: 15px 0;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    margin-top: 0px; /* Add some margin to create space between header and content */
+
+}
+
+.header-scrolled {
+    background-color: rgba(0, 0, 0, 0.7); /* Translucent black background */
+}
+
+
+.logo{
+    margin-left: 90px;
+    height: 60px;
+    width: 100px; 
+}
+
+.logo:hover {
+    animation: jiggle 0.5s ease-in-out infinite; /* Apply the jiggle animation on hover */
+}
+
+/* Define the jiggle animation */
+@keyframes jiggle {
+    0% {
+        transform: translateX(0); /* Start with no translation */
+    }
+    25% {
+        transform: translateX(-5px); /* Move left */
+    }
+    50% {
+        transform: translateX(5px); /* Move right */
+    }
+    75% {
+        transform: translateX(-5px); /* Move left again */
+    }
+    100% {
+        transform: translateX(0); /* Return to the original position */
+    }
+}
+
+.navbar {
+    list-style-type: none;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+/* Use monospace font and set initial font-weight to normal */
+.navbar li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-family: monospace; /* Set font to monospace */
+    font-weight: normal; /* Remove bold */
+    padding: 5px 20px; /* Increase the horizontal padding for more spacing */
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 20px;
+    margin-top: 0px;
+    transition: transform 0.2s, border 0.2s, font-size 0.2s; /* Add transition for smooth effect */
+    font-size: 18px; /* Increase the initial font size */
+    border: 2px solid #fff;
+    
+}
+
+/* Grow the button size on hover */
+.navbar li a:hover {
+    transform: scale(1.05);
+    transform-origin: center bottom; /* Set the transform origin to the bottom center */
+    border: 1px solid #fff;
+    font-size: 20px; /* Increase the font size on hover */
+    color: black;
+    background-color: white;
+}
+
+
+.navbar li a.active {
+    border: 1px solid #fff;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+}
+
+
+
+/* Add some basic styling for the main content */
+main {
+    padding: 20px;
+}
+
+/* Style the footer if needed */
+footer {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Style the content div */
+.content {
+    width: 100%; /* Set the width of the content div */
+    margin: 10% 0% 10% 2%; /* Adjust the margins (top right bottom left) */  
+}
+
+
+/* Style the left section */
+/* Style the left section */
+.left-section {
+    width: 20%; /* Set the width of the left section to 50% */
+    float: left; /* Float the left section to the left */
+    text-align: center;
+    margin-top: -30px; /* Adjust the margin-top to move the section upwards */
+    transition: transform 0.4s, box-shadow 0.4s; /* Add transition for smooth effect */
+    border: 1px solid transparent; /* Add a transparent border initially */
+    padding: 5%;
+    padding-bottom: 2%;
+    margin-right: 0;
+    border-radius: 25px; 
+    margin-left: -20px;
+}
+
+.left-section:hover {
+    transform: scale(1.05);
+    border: 5px solid rgb(93, 0, 255);
+    /* border: 5px solid white; */
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Style the picture section */
+.pic-section {
+    display: flex;
+    justify-content: center; /* Center-align content horizontally */
+    height: 100%; /* Make the div fill its parent's height */
+    padding-top: 0px; /* Add padding to the top of the div */
+    margin-top: -20px;
+    margin-bottom: 0px;
+    background-image: linear-gradient(transparent, rgba(0, 0, 1, 0)); /* Create a gradient mask */
+}
+
+.pic-section img {
+    width: 350px; /* Set the width of the profile picture */
+    height: 350px; /* Set the height of the profile picture */
+    margin-top: -40px; /* Remove margin to position the image at the top */
+    border-radius: 40%;
+}
+
+
+
+
+/* Style the name section */
+.name-section h2 {
+    font-size: 35px; /* Adjust the font size as needed */
+    margin-top: 35px; /* Add spacing between the picture and name */
+    color: #fff;
+    font-family: monospace; /* Set font to monospace */
+    text-align: left; /* Left-align the text */
+}
+
+/* Style the text section */
+.text-section p {
+    margin-bottom: 10px; /* Adjust the value to your preference */
+    margin-top: 20px; /* Add spacing between the name and text */
+    font-size: 16px; /* Adjust the font size as needed */
+    line-height: 1.5; /* Set the line height for better readability */
+    color: #fff;
+    font-family: monospace; /* Set font to monospace */
+    text-align: left; /* Left-align the text */
+    margin-bottom: 0px;
+}
+
+.text-section i {
+    margin-right: 8px; /* Adjust the value to your preference */
+    margin-top: 5px;
+}
+
+.text-section a {
+    color: white; /* Set the initial text color to white */
+    text-decoration: none; /* Remove the underline by default */
+    transition: color 0.3s, text-decoration 0.3s; /* Add a smooth transition effect */
+}
+
+.text-section a:hover {
+    color: white; /* Change the text color to white on hover */
+    text-decoration: underline; /* Underline the link on hover */
+}
+
+.info-section {
+    width: 60%; /* Set the width of the info-section to 50% */
+    float: right; /* Float the info-section to the right */
+    text-align: left; /* Align the text to the left within the info-section */
+    padding: 5%; /* Add padding to the right section */
+    padding-left: 0px;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    margin-top: -90px;
+    
+}
+
+.info-section h3 {
+    font-size: 40px;
+    font-family: monospace;
+    color: white;
+}
+
+.info-section p {
+    font-size: 18px;
+    font-family: monospace;
+    color: white;
+}
+.expmain{
+    margin-top: 7%;
+}
+.exp.content {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+.exp{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0.5% 2%;
+    border-radius: 15px;
+}
+
+.exph h1{
+    margin-left: 10%;
+    font-size: 40px;
+    color: white;
+    font-family: monospace;
+}
+
+.exp h2{
+    font-size: 24px;
+    color: white;
+    font-family: monospace;
+}
+
+.exp p{
+    color: white;
+    font-family: monospace;
+}
+
+.exp ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.exp li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: monospace;
+}
+

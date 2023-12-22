@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the header element
+            var header = document.querySelector('header');
+
+            // Listen for the scroll event
+            window.addEventListener('scroll', function() {
+                // Check the scroll position
+                if (window.scrollY > 0) {
+                    // Add the class when scrolled
+                    header.classList.add('header-scrolled');
+                } else {
+                    // Remove the class when at the top
+                    header.classList.remove('header-scrolled');
+                }
+            });
+        });
+    </script>
+
+    <title>Your Website</title>
+
+    <script>
+        const navbarItems = document.querySelectorAll('.navbar li a');
+    
+        navbarItems.forEach(item => {
+            item.addEventListener('click', function() {
+                navbarItems.forEach(innerItem => innerItem.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Your Logo" class="logo">
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="left-section">
+                <div class="pic-section">
+                    <!-- Add your profile picture here -->
+                    <img src="your-image2.jpg" alt="Your Name">
+                </div>
+                <div class="name-section">
+                    <h2>Sarthak Singh</h2>
+                </div>
+                <div class="text-section">
+                    <p>BS in Computer Science, University of Calgary</p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a><br>
+                        <a href="https://github.com/your-github-profile" target="_blank"><i class="fab fa-github"></i> GitHub</a><br>
+                        <a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i> Email</a>
+                    </p>
+                </div>
+            </div>
+            <div class = "info-section">
+                <h3>
+                    About me
+                </h3>
+                <p>
+                    I am a computer science undergraduate at the University of Calgary.  I have always been deeply committed to the pursuit of knowledge and innovation in the realm of technology. My academic journey has not only solidified my passion for computer science but also fueled my curiosity, driving me to explore the frontiers of this ever-evolving field. 
+                </p>
+                <p>
+                    Beyond the fields of academia and coding, I find myself engaging in physical activities and gaming.
+                </p>
+                <br>
+                <h3>
+                    Interests
+                </h3>
+                <p>
+                    AI, Machine Learning, Web Development, Software Engineering, Deep Learning
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the header element
+            var header = document.querySelector('header');
+
+            // Listen for the scroll event
+            window.addEventListener('scroll', function() {
+                // Check the scroll position
+                if (window.scrollY > 0) {
+                    // Add the class when scrolled
+                    header.classList.add('header-scrolled');
+                } else {
+                    // Remove the class when at the top
+                    header.classList.remove('header-scrolled');
+                }
+            });
+        });
+    </script>
+    <script>
+        const navbarItems = document.querySelectorAll('.navbar li a');
+    
+        navbarItems.forEach(item => {
+            item.addEventListener('click', function() {
+                navbarItems.forEach(innerItem => innerItem.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+    <title>Your Website</title>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Your Logo" class="logo">
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html" class="active">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <div class="expmain">
+        <div class="exph">
+            <h1>Experience</h1>
+        </div>
+            <div class="exp.content">  
+                <div class="exp">
+                    <h2>Research Assistant | Shaktilab</h2>
+                    <p>
+                        <ul>
+                            <li>Contributed to the "ROI of Data Analytics" Project which focuses on redefining Machine Learning evaluation, emphasizing the ROI of data analytics beyond accuracy. By questioning the balance between costs and benefits, the project introduces a new perspective on ML model selection, including Semisupervised and Deep Learning.</li>
+                            <li>Conducted open-source data gathering from platforms like Bugzilla and applied advanced data processing techniques to ensure the quality and relevance of gathered information.</li>
+                            <li>Designed and implemented a Requirements Dependency Graph for OSS data.</li>
+                            <li>Developed and evaluated a cutting-edge link prediction algorithm.</li>
+                        </ul>
+                    </p>
+                </div>
+                
+                <div class="exp">
+                    <h2>Business Development Intern | MemoMoti</h2>
+                    <p>
+                        <ul>
+                            <li>Utilized Python libraries such as Pandas and NumPy to analyze market data, providing actionable insights into
+                                emerging edu-tech trends.</li>
+                            <li>Assisted in creating predictive sales models using Python's scikit-learn, aiding in more accurate sales forecasting.</li>
+                            <li>Visualized and presented stock data in 5 dynamic dashboards using Tableau, aiding traders in making informed
+                                decisions in virtual trading simulations.</li>
+                        </ul>
+                    </p>
+                </div>
+                
+                <div class="exp">
+                    <h2>Research Assistant | University of Calgary</h2>
+                    <p>
+                        <ul>
+                            <li>Research Assistant at a project aimed to explore the concept of min-entropy in the context of qubits, the fundamental building blocks of quantum computers. </li>
+                            <li>The purpose of the project is to develop an advanced understanding of qubit min-entropy and its applications in quantum information theory, cryptography, and computer science.</li>
+                            <li>Assisted in creating predictive sales models using Python's scikit-learn, aiding in more accurate sales forecasting.</li>
+                            <li>Crafted and refined an innovative algorithm that iteratively processes equations across variable spectrums,
+                                allowing for adjustments based on emergent patterns.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="exp">
+                    <h2>Software Engineering Virtual Experience | JPMorgan Chase & Co</h2>
+                    <p>
+                        <ul>
+                            <li>Integrated a stock price data feed, processing over 10,000 data points using Excel to ensure smooth interfacing with the database. </li>
+                            <li>Employed JPMorgan Chase's proprietary frameworks and tools in 3 simulated projects, enhancing task efficiency
+                                by 20%.</li>
+                            <li>Visualized and presented stock data in 5 dynamic dashboards using Tableau, aiding traders in making informed
+                                decisions in virtual trading simulations.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="exp">
+                    <h2>Artificial Intelligence & Data Analytics Virtual Experience | Cognizant</h2>
+                    <p>
+                        <ul>
+                            <li>Gained hands-on experience replicating tasks executed by Cognizant's AI team, driving personalized digital
+                                solutions at every customer touchpoint. Engaged in deep-dive analysis of customer data to formulate actionable next steps.</li>
+                            <li>Mastered relational data concepts, leading to the framing of pivotal problem statements.</li>
+                            <li>Built predictive models, interpreting the derived results in a business context. Assessed production ML models to guarantee optimum performance and quality results.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    </body>
