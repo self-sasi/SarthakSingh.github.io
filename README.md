@@ -42,6 +42,8 @@ This portfolio website is a personal project, and contributions are not open to 
 
 ## License
 
-This portfolio website is licensed under the [All Rights Reserved](LICENSE.md).
+This portfolio website is protected under "All Rights Reserved."
+
+All rights are reserved, and no permission is granted for use, modification, or distribution of the software, its associated files, or any content present on the website.
 
 ---
